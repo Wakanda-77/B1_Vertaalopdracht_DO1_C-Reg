@@ -37,6 +37,7 @@ namespace CSharpReg
                     decimal bonTotaal = 0;
                     string bonString = "";
                     while (bestelKeuze != "9")
+                    Console.OutputEncoding = System.Text.Encoding.UTF8;
                     {
                         Console.WriteLine("========= BON MENU =========");
                         Console.WriteLine("Bon " + aantalBonnen.ToString());
