@@ -107,13 +107,27 @@ namespace CSharpReg
                 // TODO: If-statement corrigeren
                 else if (keuze == 2)
                 {
-                    // TODO: Afmaken
+                    Console.WriteLine("Uitvoeren terugbetaling");
+                    Console.WriteLine("Bedrag originele bon: ");
+                    float terugTegeven = float.Parse(Console.WriteLine());
+                    Console.WriteLine("Reden retour: ");
+                    float reden = float.Parse(Console.WriteLine());
+                    dagTotaalTerug = terugTegeven;
                 }
                 // TODO: If-statement corrigeren
                 else if (keuze == 3)
                 {
-                    // TODO: Afmaken
+                    Console.WriteLine("======= DAG TOTALEN ========");
+                    Console.WriteLine("In kassa begin:   " + bedragInKassaBegin.ToString());
+                    Console.WriteLine("Verkocht:         " + dagTotaal.ToString());
+                    Console.WriteLine("Retour:           " + dagTotaalTerug.ToString());
+                    Console.WriteLine("In kassa:         " + bedragInKassaBegin + dagTotaal - dagTotaalTerug.ToString());
+                    
+                    Console.WriteLine("Druk op <ENTER> om door te gaan.");
+                    Console.ReadLine();
                 }
+                Console.WriteLine("Hoeveel zit er nu in de kassa?");
+                float inKassa = float.Parse(Console.ReadLine());
             }
             Console.WriteLine("Hoeveel zit er nu in de kassa?");
             decimal inKassa = decimal.Parse(Console.ReadLine());
